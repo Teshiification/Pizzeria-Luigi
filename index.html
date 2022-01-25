@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luigis</title>
+    <link rel="stylesheet" type="text/css" href="./dist/css/index.min.css" />
+  </head>
+  <body>
+    <div id="animationcontent"></div>
+
+    <section>
+      <h1 class="mainFontColor"><a href="index.html">Luigis Pizzeria</a></h1>
+      <p class="mainFontColor">"Geschmacklich wie aus Italia sein Mudda"</p>
+    </section>
+
+    <section>
+      <div class="navigation">
+        <ul>
+          <li class="list active">
+            <a href="./index.html">
+              <span class="icon"><ion-icon name="home"></ion-icon></span>
+              <span class="text">Home</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="./speisekarte.html">
+              <span class="icon"><ion-icon name="bookmarks"></ion-icon></span>
+              <span class="text">Speisekarte</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="./bestellung.html">
+              <span class="icon"><ion-icon name="cart"></ion-icon></span>
+              <span class="text">Bestellen</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="./aboutus.html">
+              <span class="icon"><ion-icon name="person"></ion-icon></span>
+              <span class="text">About us</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="./impressum.html">
+              <span class="icon"><ion-icon name="list"></ion-icon></span>
+              <span class="text">Impressum</span>
+            </a>
+          </li>
+          <div class="indicator" />
+        </ul>
+      </div>
+    </section>
+    <section>
+      <div class="box">
+        <div class="content">
+          <h2>Genuss mit Schuss! Glühwein im Angebot!</h2>
+          <h3>Ab 01.12. Glühwein für nur 1,50€</h3>
+          <img src="./img/kerze-weihnachten.png" />
+          <h2>Weihnachtsessen</h2>
+          <h3>
+            Jetzt mit la Familia essen! <br />
+            Reservierungen erwünscht! <br />
+            <i>Aktuelle Corona Regel im Restaurant: 2G+!</i><br />
+            <i>Abholungen vor Ort auch ohne Impfung möglich!</i>
+          </h3>
+        </div>
+      </div>
+    </section>
+    <script>
+      const list = document.querySelectorAll(".list");
+      function activeLink() {
+        list.forEach((item) => item.classList.remove("active"));
+        this.classList.add("active");
+      }
+      list.forEach((item) => item.addEventListener("click", activeLink));
+    </script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#animationcontent").load("snowflakes.html");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+$black: #202731;
+$gray: rgb(187, 187, 187);
+$mainColor: #dd3f31;
+//$mainColor: #3c7a17; //GRÜN
+
+$background: $black;
+
+.blackFont {
+  color: $black;
+}
+
+.blackBackground {
+  background: $black;
+  color: $gray;
+  z-index: -1;
+}
+.mainFontColor {
+  color: $mainColor;
+}
+
+.mainBackgroundColor {
+  background: $mainColor;
+  z-index: -1;
+}
+
+.mainTextGlow {
+  text-shadow: 0 0 5px $mainColor;
+}
