@@ -1,77 +1,281 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Luigis</title>
-    <link rel="stylesheet" type="text/css" href="./dist/css/index.min.css" />
-  </head>
-  <body>
-    <div id="animationcontent"></div>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
 
-    <section>
-      <h1 class="mainFontColor"><a href="index.html">Luigis Pizzeria</a></h1>
-      <p class="mainFontColor">"Geschmacklich wie aus Italia sein Mudda"</p>
-    </section>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <section>
-      <div class="navigation">
-        <ul>
-          <li class="list active">
-            <a href="./index.html">
-              <span class="icon"><ion-icon name="home"></ion-icon></span>
-              <span class="text">Home</span>
-            </a>
-          </li>
-          <li class="list">
-            <a href="./speisekarte.html">
-              <span class="icon"><ion-icon name="bookmarks"></ion-icon></span>
-              <span class="text">Speisekarte</span>
-            </a>
-          </li>
-          <li class="list">
-            <a href="./bestellung.html">
-              <span class="icon"><ion-icon name="cart"></ion-icon></span>
-              <span class="text">Bestellen</span>
-            </a>
-          </li>
-          <li class="list">
-            <a href="./aboutus.html">
-              <span class="icon"><ion-icon name="person"></ion-icon></span>
-              <span class="text">About us</span>
-            </a>
-          </li>
-          <li class="list">
-            <a href="./impressum.html">
-              <span class="icon"><ion-icon name="list"></ion-icon></span>
-              <span class="text">Impressum</span>
-            </a>
-          </li>
-          <div class="indicator" />
-        </ul>
-      </div>
-    </section>
-    <section>
-      <div class="box">
-        <div class="content">
-          <h2>Genuss mit Schuss! Glühwein im Angebot!</h2>
-          <h3>Ab 01.12. Glühwein für nur 1,50€</h3>
-          <img src="./img/kerze-weihnachten.png" />
-          <h2>Weihnachtsessen</h2>
-          <h3>
-            Jetzt mit la Familia essen! <br />
-            Reservierungen erwünscht! <br />
-            <i>Aktuelle Corona Regel im Restaurant: 2G+!</i><br />
-            <i>Abholungen vor Ort auch ohne Impfung möglich!</i>
-          </h3>
+    <title>Pizza Luigi</title>
+</head>
+<body>
+
+    <!-- header -->
+
+    <header class="header">
+
+        <a href="#home" class="logo">
+            <h3>
+                <div class="green-color">PIZ</div>
+                <div class="white-color">ZER</div> <div class="primary-color">IA-</div>
+            </h3>
+            <img src="./images/logo.png" alt="">
+        </a>
+
+        <nav class="navbar">
+            <a href="#home">HOME</a>
+            <a href="#about">ÜBER UNS</a>
+            <a href="#menu">MENÜ</a>
+            <a href="#review">BEWERTUNGEN</a>
+            <a href="#contact">KONTAKT</a>
+            <a href="#blogs">BLOGS</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn">search</div>
+            <div class="fas fa-shopping-cart" id="cart-btn">cart</div>
+            <div class="fas fa-bars" id="menu-btn"></div>
         </div>
-      </div>
+
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="suche hier...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+
+        <div class="cart-items-container">
+
+            
+            
+        </div>
+
+    </header>
+
+    <!-- home  -->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>das beste aus dem regionalem Anbau</h3>
+            <p>frischer als deine mudder es je machen könnte</p>
+            <a href="#" class="btn">machs dir nicht selbst dafür sind wir ja da</a>
+        </div>
+
     </section>
-    <!--JAVA SCRIPTS-->
-    <script src="./js/ionicons.js" />
-    <script src="./js/navHandler.js" />
-    <script src="./js/jquery.js" />
-    <script src="./js/particleanimation.js" />
-  </body>
+
+    <!-- home -->
+
+    <!-- ÜBER UNS -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading"> <span>ÜBER</span> UNS </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="" alt="">
+            </div>
+            <img src="./images/logo.png">
+            <div class="content">
+                
+                <h3>Was macht uns besonders?</h3>
+                <p>Wir sind cool, wir sind fresh, unser essen wird nicht schlecht~</p>
+                <p>Außerdem setzen wir neue Maßstäbe</p>
+                <a href="#" class="btn">lerne mehr von uns</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ÜBER UNS-->
+
+    <!-- menu -->
+
+    <section class="menu" id="menu">
+
+        <h1 class="heading"> Unser <span>Menü</span> </h1>
+
+        <div class="box-container">
+
+            
+
+        </div>
+
+    </section>
+
+    <!-- review -->
+
+    <section class="review" id="review">
+
+        <h1 class="heading"> Kunden <span>Bewertungen</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/quote-img.png" alt="" class="quote">
+                <p>In germany we say "wallah hat nisch geschmeckt"</p>
+                <img src="./admin/images/profile-customer.png" class="user" alt="">
+                <h3>Anonym</h3>
+                <div class="stars">
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/quote-img.png" alt="" class="quote">
+                <p>OK</p>
+                <img src="./images/user/rammus.PNG" class="user" alt="">
+                <h3>Rammus</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            
+            <div class="box">
+                <img src="images/quote-img.png" alt="" class="quote">
+                <p>Darüber muss ich erstmal 'ne Nacht mit dir schlafen.</p>
+                <img src="./images/user/davisschulz.PNG" class="user" alt="">
+                <h3>Davis Schulz</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- review -->
+
+    <!-- contact -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading"> <span>Kontaktiere</span> uns </h1>
+
+        <div class="row">
+
+            <iframe class="map" src="https://maps.google.com/maps?q=netcom%20mainz&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen="true" loading="lazy"></iframe>
+
+            <form action="">
+                <h3>Schreib uns einfach an</h3>
+                <div class="inputBox">
+                    <span class="fas fa-user"></span>
+                    <input type="text" placeholder="name">
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-envelope"></span>
+                    <input type="email" placeholder="email">
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-phone"></span>
+                    <input type="number" placeholder="telefon nummer">
+                </div>
+                <input type="submit" value="contact now" class="btn">
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- contact -->
+
+    <!-- blogs -->
+
+    <section class="blogs" id="blogs">
+
+        <h1 class="heading"> unsere <span>Blogs</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/blog/wiesbaden.PNG" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Neue Filiale in Wiesbaden</a>
+                    <span>~ admin / 69st may, 2021</span>
+                    <p>Wir haben eine neue Filiale gegründer, krass oder?</p>
+                    <a href="#" class="btn">mehr erfahren</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/blog/instagram_tiktok.PNG" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Jetzt auf Instagram und TikTok</a>
+                    <span>~ admin / 31st feb, 2021</span>
+                    <p>Weils jeder macht</p>
+                    <a href="#" class="btn">mehr erfahren</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/blog/blog.PNG" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Ein cooler Blog!</a>
+                    <span>~ admin / 1st april, 2021</span>
+                    <p>Ohne Inhalt, WOW!</p>
+                    <a href="#" class="btn">mehr erfahren</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- blogs -->
+
+    <!-- footer -->
+
+    <section class="footer">
+
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+        </div>
+
+        <div class="links">
+            <a href="#home">HOME</a>
+            <a href="#about">ÜBER UNS</a>
+            <a href="#menu">MENÜ</a>
+            <a href="#review">BEWERTUNGEN</a>
+            <a href="#contact">KONTAKT</a>
+            <a href="#blogs">BLOGS</a>
+        </div>
+
+        <div class="credit">created by <span ><a href="https://danny-sinicco.de">danny sinicco</a></span> | all rights reserved</div>
+
+    </section>
+
+    <!-- footer -->
+
+    <script src="./js/script.js"></script>
+
+    <!-- MENU CART IMPORT -->
+    <script src="./externaldata/menu.js"></script>
+    <script src="./js/menuimport.js"></script>
+
+    <!-- CHECKOUT LIST IMPORT -->
+    <script src="./externaldata/checkoutitems.js"></script>
+    <script src="./js/checkoutimport.js"></script>
+
+</body>
 </html>
